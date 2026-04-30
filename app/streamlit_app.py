@@ -48,7 +48,7 @@ except ImportError as e:
 # --- Configuration page (doit être la première commande streamlit) ---
 st.set_page_config(
     page_title="DEMANOU-FOUDJI-KARL-ALBERT-KUETE-24F2995",
-    page_icon="🔮",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -334,7 +334,7 @@ with st.sidebar:
     badge_txt = "DONNÉES GÉNÉRÉES" if src == "generated" else ("FICHIER CHARGÉ" if src == "uploaded" else "SAISIE MANUELLE")
     st.markdown(f'<div style="text-align:center;"><span class="data-badge {badge_class}">● {badge_txt}</span></div>', unsafe_allow_html=True)
     st.markdown("---")
-    st.caption("INF232 EC2 · Université d'Été")
+    st.caption("INF232 EC2 ")
 
 # ============================================================
 #  TABLEAU DE BORD
@@ -790,4 +790,4 @@ elif menu == "⚡ Performances":
 
 # --- Footer ---
 st.markdown("---")
-st.markdown('<div style="text-align:center;font-family:Share Tech Mono;font-size:0.6rem;color:#3a4070;">NEO ANALYTICS · INF232 EC2 · v2.0 · Cyber Edition</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;font-family:Share Tech Mono;font-size:0.6rem;color:#3a4070;"> · INF232 EC2 · v2.0 </div>', unsafe_allow_html=True)
